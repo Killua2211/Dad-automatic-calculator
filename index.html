@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cool Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Work Calculator</h1>
+        <div class="input-group">
+            <label for="weight">Weight (kg):</label>
+            <input type="number" id="weight" placeholder="Enter weight in kg">
+        </div>
+        <div class="input-group">
+            <label for="classNum">Class Number:</label>
+            <input type="number" id="classNum" placeholder="Enter class number">
+        </div>
+        <div class="input-group">
+            <label for="firstFactor">First Factor:</label>
+            <input type="number" id="firstFactor" placeholder="Enter first factor">
+        </div>
+        <div class="input-group">
+            <label for="secondFactor">Second Factor:</label>
+            <input type="number" id="secondFactor" placeholder="Enter second factor">
+        </div>
+        <button onclick="calculateResult()">Calculate</button>
+        <div class="results">
+            <p>Class Weight: <span id="classWeightResult">0.00</span> kg</p>
+            <p>Product of Two Factors: <span id="afterNumberResult">0.00</span></p>
+            <p>Final Result: <span id="finalResult">0.00</span></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
